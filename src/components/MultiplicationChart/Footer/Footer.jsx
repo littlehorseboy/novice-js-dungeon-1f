@@ -3,14 +3,10 @@ import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
 
 const styles = {
-  root: {
-    width: 1280,
-    height: 1372,
-    backgroundColor: '#F0F0F0',
-  },
+
 };
 
-class MultiplicationChart extends React.Component {
+class Footer extends React.Component {
   render() {
     const { classes } = this.props;
 
@@ -22,8 +18,8 @@ class MultiplicationChart extends React.Component {
   }
 }
 
-MultiplicationChart.propTypes = {
+Footer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MultiplicationChart);
+export default withStyles(styles)(Footer);

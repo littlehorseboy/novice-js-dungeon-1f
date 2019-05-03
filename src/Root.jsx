@@ -8,7 +8,7 @@ import 'core-js/features/promise';
 import 'core-js/features/array/find';
 import 'core-js/features/object/assign';
 import 'core-js/features/weak-map';
-import MultiplicationChart from './pages/MultiplicationChart.jsx';
+import MultiplicationChart from './pages/MultiplicationChart/MultiplicationChart.jsx';
 
 jss.setup(preset());
 jss.createStyleSheet(normalize).attach();
