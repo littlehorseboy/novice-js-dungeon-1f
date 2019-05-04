@@ -6,8 +6,11 @@ import Footer from '../../components/MultiplicationChart/Footer/Footer.jsx';
 const styles = {
   root: {
     width: 1280,
-    height: 1372,
+    minHeight: '100vh',
     backgroundColor: '#F0F0F0',
+    position: 'relative',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 };
 

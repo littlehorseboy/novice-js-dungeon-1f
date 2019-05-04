@@ -16,6 +16,7 @@ jss.createStyleSheet(normalize).attach();
 const styles = {
   root: {
     fontFamily: 'system-ui, -apple-system, "Roboto", "Helvetica", "Arial", sans-serif',
+    // backgroundColor: '#F0F0F0',
   },
 };
 

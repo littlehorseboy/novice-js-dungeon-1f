@@ -3,7 +3,18 @@ import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
 
 const styles = {
-
+  root: {
+    position: 'absolute',
+    bottom: 0,
+    textAlign: 'right',
+    lineHeight: '34px',
+    color: '#F0F0F0',
+    width: '100%',
+    backgroundColor: '#2EB738',
+  },
+  content: {
+    marginRight: 85,
+  },
 };
 
 class Footer extends React.Component {
@@ -12,7 +23,9 @@ class Footer extends React.Component {
 
     return (
       <div className={classes.root}>
-        abc
+        <span className={classes.content}>
+          Copyright © 2019 Horse. All rights reserved.
+        </span>
       </div>
     );
   }
