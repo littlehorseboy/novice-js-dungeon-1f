@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
-import { range } from 'lodash';
+import range from 'lodash/range';
 
 const styles = {
   root: {
@@ -50,7 +50,7 @@ class GridList extends React.Component {
     return (
       <div className={classes.root}>
         {range(1, 10).map(n => (
-          <div className={classes.grid}>
+          <div key={n} className={classes.grid}>
             <div className={classes.gridContent}>
               <div className={classes.titleNumber}>{n}</div>
               <div className={classes.formula}>{n} × 1 ＝ {n * 1}</div>
