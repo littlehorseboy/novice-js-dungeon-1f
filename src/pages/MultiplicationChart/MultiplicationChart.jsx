@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
+import GridList from '../../components/MultiplicationChart/GridList/GridList.jsx';
 import Footer from '../../components/MultiplicationChart/Footer/Footer.jsx';
 
 const styles = {
@@ -8,9 +9,11 @@ const styles = {
     width: 1280,
     minHeight: '100vh',
     backgroundColor: '#F0F0F0',
-    position: 'relative',
     marginLeft: 'auto',
     marginRight: 'auto',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
   },
 };
 
@@ -20,7 +23,12 @@ class MultiplicationChart extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Footer />
+        <div>
+          <GridList />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }

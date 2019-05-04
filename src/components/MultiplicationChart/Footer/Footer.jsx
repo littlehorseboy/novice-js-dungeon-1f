@@ -4,12 +4,9 @@ import withStyles from 'react-jss';
 
 const styles = {
   root: {
-    position: 'absolute',
-    bottom: 0,
     textAlign: 'right',
     lineHeight: '34px',
     color: '#F0F0F0',
-    width: '100%',
     backgroundColor: '#2EB738',
   },
   content: {
