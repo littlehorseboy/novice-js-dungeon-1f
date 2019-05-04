@@ -15,6 +15,10 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'space-between',
   },
+  gridList: {
+    marginTop: 80,
+    marginBottom: 80,
+  },
 };
 
 class MultiplicationChart extends React.Component {
@@ -23,7 +27,7 @@ class MultiplicationChart extends React.Component {
 
     return (
       <div className={classes.root}>
-        <div>
+        <div className={classes.gridList}>
           <GridList />
         </div>
         <div>

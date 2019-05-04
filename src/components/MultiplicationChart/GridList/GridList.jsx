@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
+import { range } from 'lodash';
 
 const styles = {
   root: {
@@ -16,6 +17,7 @@ const styles = {
     borderRadius: '100px 0 30px 0',
     backgroundColor: '#FFFFFF',
     boxShadow: '#D8D8D8 0px 3px 10px',
+    marginBottom: 40,
   },
   gridContent: {
     height: 'calc(366px - 64px - 64px)',
@@ -47,62 +49,22 @@ class GridList extends React.Component {
 
     return (
       <div className={classes.root}>
-        <div className={classes.grid}>
-          <div className={classes.gridContent}>
-            <div className={classes.titleNumber}>2</div>
-            <div className={classes.formula}>2 × 1 ＝ 2</div>
-            <div className={classes.formula}>2 × 2 ＝ 4</div>
-            <div className={classes.formula}>2 × 3 ＝ 6</div>
-            <div className={classes.formula}>2 × 4 ＝ 8</div>
-            <div className={classes.formula}>2 × 5 ＝ 10</div>
-            <div className={classes.formula}>2 × 6 ＝ 12</div>
-            <div className={classes.formula}>2 × 7 ＝ 14</div>
-            <div className={classes.formula}>2 × 8 ＝ 16</div>
-            <div className={classes.formula}>2 × 9 ＝ 18</div>
+        {range(1, 10).map(n => (
+          <div className={classes.grid}>
+            <div className={classes.gridContent}>
+              <div className={classes.titleNumber}>{n}</div>
+              <div className={classes.formula}>{n} × 1 ＝ {n * 1}</div>
+              <div className={classes.formula}>{n} × 2 ＝ {n * 2}</div>
+              <div className={classes.formula}>{n} × 3 ＝ {n * 3}</div>
+              <div className={classes.formula}>{n} × 4 ＝ {n * 4}</div>
+              <div className={classes.formula}>{n} × 5 ＝ {n * 5}</div>
+              <div className={classes.formula}>{n} × 6 ＝ {n * 6}</div>
+              <div className={classes.formula}>{n} × 7 ＝ {n * 7}</div>
+              <div className={classes.formula}>{n} × 8 ＝ {n * 8}</div>
+              <div className={classes.formula}>{n} × 9 ＝ {n * 9}</div>
+            </div>
           </div>
-        </div>
-        <div className={classes.grid}>
-          <div className={classes.gridContent}>
-            <div className={classes.titleNumber}>2</div>
-            <div className={classes.formula}>2 × 1 ＝ 2</div>
-            <div className={classes.formula}>2 × 2 ＝ 4</div>
-            <div className={classes.formula}>2 × 3 ＝ 6</div>
-            <div className={classes.formula}>2 × 4 ＝ 8</div>
-            <div className={classes.formula}>2 × 5 ＝ 10</div>
-            <div className={classes.formula}>2 × 6 ＝ 12</div>
-            <div className={classes.formula}>2 × 7 ＝ 14</div>
-            <div className={classes.formula}>2 × 8 ＝ 16</div>
-            <div className={classes.formula}>2 × 9 ＝ 18</div>
-          </div>
-        </div>
-        <div className={classes.grid}>
-          <div className={classes.gridContent}>
-            <div className={classes.titleNumber}>2</div>
-            <div className={classes.formula}>2 × 1 ＝ 2</div>
-            <div className={classes.formula}>2 × 2 ＝ 4</div>
-            <div className={classes.formula}>2 × 3 ＝ 6</div>
-            <div className={classes.formula}>2 × 4 ＝ 8</div>
-            <div className={classes.formula}>2 × 5 ＝ 10</div>
-            <div className={classes.formula}>2 × 6 ＝ 12</div>
-            <div className={classes.formula}>2 × 7 ＝ 14</div>
-            <div className={classes.formula}>2 × 8 ＝ 16</div>
-            <div className={classes.formula}>2 × 9 ＝ 18</div>
-          </div>
-        </div>
-        <div className={classes.grid}>
-          <div className={classes.gridContent}>
-            <div className={classes.titleNumber}>2</div>
-            <div className={classes.formula}>2 × 1 ＝ 2</div>
-            <div className={classes.formula}>2 × 2 ＝ 4</div>
-            <div className={classes.formula}>2 × 3 ＝ 6</div>
-            <div className={classes.formula}>2 × 4 ＝ 8</div>
-            <div className={classes.formula}>2 × 5 ＝ 10</div>
-            <div className={classes.formula}>2 × 6 ＝ 12</div>
-            <div className={classes.formula}>2 × 7 ＝ 14</div>
-            <div className={classes.formula}>2 × 8 ＝ 16</div>
-            <div className={classes.formula}>2 × 9 ＝ 18</div>
-          </div>
-        </div>
+        ))}
       </div>
     );
   }

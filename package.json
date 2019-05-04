@@ -40,6 +40,7 @@
     "core-js": "^3.0.1",
     "jss": "^9.8.7",
     "jss-preset-default": "^4.5.0",
+    "lodash": "^4.17.11",
     "normalize-jss": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
