@@ -41,7 +41,7 @@ const styles = {
   },
 };
 
-class FirstGrid extends React.Component {
+export class FirstGrid extends React.Component {
   render() {
     const { classes } = this.props;
 

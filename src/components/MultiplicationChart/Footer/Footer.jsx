@@ -14,7 +14,7 @@ const styles = {
   },
 };
 
-class Footer extends React.Component {
+export class Footer extends React.Component {
   render() {
     const { classes } = this.props;
 

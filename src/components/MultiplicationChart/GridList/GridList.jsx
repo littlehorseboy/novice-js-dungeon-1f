@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
@@ -15,7 +16,7 @@ const styles = {
   },
 };
 
-class GridList extends React.Component {
+export class GridList extends React.Component {
   render() {
     const { classes } = this.props;
 

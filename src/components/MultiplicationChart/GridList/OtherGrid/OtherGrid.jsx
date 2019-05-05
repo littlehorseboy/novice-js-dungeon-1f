@@ -36,7 +36,7 @@ const styles = {
   },
 };
 
-class OtherGrid extends React.Component {
+export class OtherGrid extends React.Component {
   render() {
     const { classes, multiplicand } = this.props;
 
