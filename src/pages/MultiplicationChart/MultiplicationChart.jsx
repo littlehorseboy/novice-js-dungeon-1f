@@ -17,7 +17,7 @@ const styles = {
   },
   gridList: {
     marginTop: 80,
-    marginBottom: 80,
+    marginBottom: 'calc(80px - 12px)',
   },
 };
 
