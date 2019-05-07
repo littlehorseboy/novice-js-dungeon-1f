@@ -4,7 +4,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
   env: {
@@ -18,17 +18,6 @@ module.exports = {
   plugins: [
     'react'
   ],
-  globals: {
-    jest: 'readonly',
-    it: 'readonly',
-    test: 'readonly',
-    expect: 'readonly',
-    beforeEach: 'readonly',
-    afterEach: 'readonly',
-    beforeAll: 'readonly',
-    afterAll: 'readonly',
-    describe: 'readonly',
-  },
   rules: {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
