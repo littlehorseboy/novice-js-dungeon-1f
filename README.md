@@ -1,5 +1,7 @@
 # 新手 JS 地下城 1F
 
+[![Build Status](https://travis-ci.org/littlehorseboy/novice-js-dungeon-1f.svg?branch=master)](https://travis-ci.org/littlehorseboy/novice-js-dungeon-1f)
+
 ### 九九乘法表
 
 * React
