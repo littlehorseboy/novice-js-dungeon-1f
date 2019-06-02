@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "dev": "webpack-dev-server --progress --colors --config ./config/webpack.dev.js",
     "build": "webpack --config ./config/webpack.prod.js",
     "lint": "eslint src/**"
@@ -20,6 +21,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^2.0.1",
+    "coveralls": "^3.0.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.5",
