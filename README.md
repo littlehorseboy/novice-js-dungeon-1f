@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/littlehorseboy/novice-js-dungeon-1f.svg?branch=master)](https://travis-ci.org/littlehorseboy/novice-js-dungeon-1f)
 
+[![Coverage Status](https://coveralls.io/repos/github/littlehorseboy/novice-js-dungeon-1f/badge.svg?branch=master)](https://coveralls.io/github/littlehorseboy/novice-js-dungeon-1f?branch=master)
+
 ### 九九乘法表
 
 * React
